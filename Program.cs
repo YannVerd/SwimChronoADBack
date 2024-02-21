@@ -28,5 +28,8 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "times",
     pattern: "{controller=Times}/{action=GetOneTime}");
+    app.MapControllerRoute(
+    name: "times",
+    pattern: "{controller=Times}/{action=AddOneTime}");
 
 app.Run();

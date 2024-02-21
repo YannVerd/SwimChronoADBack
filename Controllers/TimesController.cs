@@ -1,9 +1,11 @@
 using System.Diagnostics;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using ProjectSwimChronoADBack.Models;
 
 namespace ProjectSwimChronoADBack.Controllers;
 
+[Route("times")]
 public class TimesController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -15,8 +17,17 @@ public class TimesController : Controller
 
     public void  GetOneTime(){
         TimesDBViewModel query = new();
-        query.getOne();
+        query.GetOne();
         
+    }
+
+    [HttpPost]
+    public void AddOneTime([FromBody]List<Object> list){
+         // need to deserialize data from body  ?draw
+         
+        
+        TimesDBViewModel query = new();
+        query.AddOne(list);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
