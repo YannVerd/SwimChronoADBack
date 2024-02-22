@@ -43,3 +43,4 @@ C:\Users\BeWeb\Dev\ProjectSwimChronoADBack\obj\Debug\net8.0\refint\ProjectSwimCh
 C:\Users\BeWeb\Dev\ProjectSwimChronoADBack\obj\Debug\net8.0\ProjectSwimChronoADBack.pdb
 C:\Users\BeWeb\Dev\ProjectSwimChronoADBack\obj\Debug\net8.0\ProjectSwimChronoADBack.genruntimeconfig.cache
 C:\Users\BeWeb\Dev\ProjectSwimChronoADBack\obj\Debug\net8.0\ref\ProjectSwimChronoADBack.dll
+C:\Users\BeWeb\Dev\ProjectSwimChronoADBack\obj\Debug\net8.0\ProjectSwimChronoADBack.sourcelink.json

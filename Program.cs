@@ -1,3 +1,5 @@
+// using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -28,8 +30,9 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "times",
     pattern: "{controller=Times}/{action=GetOneTime}");
-    app.MapControllerRoute(
-    name: "times",
-    pattern: "{controller=Times}/{action=AddOneTime}");
+    
+app.MapControllerRoute(
+    name: "saveTimes",
+    pattern: "{controller=Times}/{action=AddOneTime}/{list}");
 
 app.Run();
