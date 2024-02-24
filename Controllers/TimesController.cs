@@ -5,27 +5,31 @@ using ProjectSwimChronoADBack.Models;
 
 namespace ProjectSwimChronoADBack.Controllers;
 
-[Route("times")]
+
+
 public class TimesController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-
+    
+    
     public TimesController(ILogger<HomeController> logger)
     {
         _logger = logger;
     }
 
+    [HttpGet]
+    [Route("times")]
     public void  GetOneTime(){
         TimesDBViewModel query = new();
         query.GetOne();
         
     }
 
+   
     [HttpPost]
+    [Route("saveTimes")]
     public void AddOneTime([FromBody]List<Object> list){
-         // need to deserialize data from body  ?draw
-         
-        
+        Console.WriteLine("bouh");
         TimesDBViewModel query = new();
         query.AddOne(list);
     }

@@ -26,7 +26,7 @@ public class TimesDBViewModel
     }
     public void AddOne(List<Object> times){
         try{
-            
+            Console.WriteLine("bah");
             var client = new MongoClient("mongodb://admin:171292@localhost:27017");
            
             var collection = client.GetDatabase("swimchrono").GetCollection<BsonDocument>("times");
