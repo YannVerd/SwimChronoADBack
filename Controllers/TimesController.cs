@@ -29,9 +29,14 @@ public class TimesController : Controller
     [HttpPost]
     [Route("saveTimes")]
     public void AddOneTime([FromBody]List<Object> list){
-        Console.WriteLine("bouh");
+        Times time = new("test", list);
+        // foreach(var lap in list)
+        // {
+        //     Console.WriteLine(lap);
+        // }
+                // Console.WriteLine("body Controller : " + list);
         TimesDBViewModel query = new();
-        query.AddOne(list);
+        query.AddOne(time);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

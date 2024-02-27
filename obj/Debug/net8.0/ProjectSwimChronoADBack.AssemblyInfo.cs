@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSwimChronoADBack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+031ca66813160d046efaba4e5c56bef1b8f0ec35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9212809069d017b14651d3352df2e95654e787b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSwimChronoADBack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSwimChronoADBack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
